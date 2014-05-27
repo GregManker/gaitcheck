@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C0FB7243193468DC00955AF5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0FB7242193468DC00955AF5 /* Foundation.framework */; };
+		C0FB7245193468DC00955AF5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0FB7244193468DC00955AF5 /* CoreGraphics.framework */; };
+		C0FB7247193468DC00955AF5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0FB7246193468DC00955AF5 /* UIKit.framework */; };
+		C0FB724D193468DC00955AF5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C0FB724B193468DC00955AF5 /* InfoPlist.strings */; };
+		C0FB724F193468DC00955AF5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C0FB724E193468DC00955AF5 /* main.m */; };
+		C0FB7253193468DC00955AF5 /* GaitCheckAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C0FB7252193468DC00955AF5 /* GaitCheckAppDelegate.m */; };
+		C0FB7256193468DC00955AF5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0FB7254193468DC00955AF5 /* Main.storyboard */; };
+		C0FB7259193468DC00955AF5 /* GaitCheckViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0FB7258193468DC00955AF5 /* GaitCheckViewController.m */; };
+		C0FB725B193468DC00955AF5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0FB725A193468DC00955AF5 /* Images.xcassets */; };
+		C0FB7262193468DC00955AF5 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0FB7261193468DC00955AF5 /* XCTest.framework */; };
+		C0FB7263193468DC00955AF5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0FB7242193468DC00955AF5 /* Foundation.framework */; };
+		C0FB7264193468DC00955AF5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0FB7246193468DC00955AF5 /* UIKit.framework */; };
+		C0FB726C193468DC00955AF5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C0FB726A193468DC00955AF5 /* InfoPlist.strings */; };
+		C0FB726E193468DC00955AF5 /* GaitCheckTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C0FB726D193468DC00955AF5 /* GaitCheckTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C0FB7265193468DC00955AF5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0FB7237193468DC00955AF5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C0FB723E193468DC00955AF5;
+			remoteInfo = GaitCheck;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C0FB723F193468DC00955AF5 /* GaitCheck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GaitCheck.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0FB7242193468DC00955AF5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C0FB7244193468DC00955AF5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C0FB7246193468DC00955AF5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C0FB724A193468DC00955AF5 /* GaitCheck-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GaitCheck-Info.plist"; sourceTree = "<group>"; };
+		C0FB724C193468DC00955AF5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C0FB724E193468DC00955AF5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C0FB7250193468DC00955AF5 /* GaitCheck-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GaitCheck-Prefix.pch"; sourceTree = "<group>"; };
+		C0FB7251193468DC00955AF5 /* GaitCheckAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GaitCheckAppDelegate.h; sourceTree = "<group>"; };
+		C0FB7252193468DC00955AF5 /* GaitCheckAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GaitCheckAppDelegate.m; sourceTree = "<group>"; };
+		C0FB7255193468DC00955AF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C0FB7257193468DC00955AF5 /* GaitCheckViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GaitCheckViewController.h; sourceTree = "<group>"; };
+		C0FB7258193468DC00955AF5 /* GaitCheckViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GaitCheckViewController.m; sourceTree = "<group>"; };
+		C0FB725A193468DC00955AF5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C0FB7260193468DC00955AF5 /* GaitCheckTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GaitCheckTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0FB7261193468DC00955AF5 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		C0FB7269193468DC00955AF5 /* GaitCheckTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GaitCheckTests-Info.plist"; sourceTree = "<group>"; };
+		C0FB726B193468DC00955AF5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C0FB726D193468DC00955AF5 /* GaitCheckTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GaitCheckTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C0FB723C193468DC00955AF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0FB7245193468DC00955AF5 /* CoreGraphics.framework in Frameworks */,
+				C0FB7247193468DC00955AF5 /* UIKit.framework in Frameworks */,
+				C0FB7243193468DC00955AF5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0FB725D193468DC00955AF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0FB7262193468DC00955AF5 /* XCTest.framework in Frameworks */,
+				C0FB7264193468DC00955AF5 /* UIKit.framework in Frameworks */,
+				C0FB7263193468DC00955AF5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C0FB7236193468DC00955AF5 = {
+			isa = PBXGroup;
+			children = (
+				C0FB7248193468DC00955AF5 /* GaitCheck */,
+				C0FB7267193468DC00955AF5 /* GaitCheckTests */,
+				C0FB7241193468DC00955AF5 /* Frameworks */,
+				C0FB7240193468DC00955AF5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C0FB7240193468DC00955AF5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C0FB723F193468DC00955AF5 /* GaitCheck.app */,
+				C0FB7260193468DC00955AF5 /* GaitCheckTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C0FB7241193468DC00955AF5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0FB7242193468DC00955AF5 /* Foundation.framework */,
+				C0FB7244193468DC00955AF5 /* CoreGraphics.framework */,
+				C0FB7246193468DC00955AF5 /* UIKit.framework */,
+				C0FB7261193468DC00955AF5 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C0FB7248193468DC00955AF5 /* GaitCheck */ = {
+			isa = PBXGroup;
+			children = (
+				C0FB7251193468DC00955AF5 /* GaitCheckAppDelegate.h */,
+				C0FB7252193468DC00955AF5 /* GaitCheckAppDelegate.m */,
+				C0FB7254193468DC00955AF5 /* Main.storyboard */,
+				C0FB7257193468DC00955AF5 /* GaitCheckViewController.h */,
+				C0FB7258193468DC00955AF5 /* GaitCheckViewController.m */,
+				C0FB725A193468DC00955AF5 /* Images.xcassets */,
+				C0FB7249193468DC00955AF5 /* Supporting Files */,
+			);
+			path = GaitCheck;
+			sourceTree = "<group>";
+		};
+		C0FB7249193468DC00955AF5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C0FB724A193468DC00955AF5 /* GaitCheck-Info.plist */,
+				C0FB724B193468DC00955AF5 /* InfoPlist.strings */,
+				C0FB724E193468DC00955AF5 /* main.m */,
+				C0FB7250193468DC00955AF5 /* GaitCheck-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C0FB7267193468DC00955AF5 /* GaitCheckTests */ = {
+			isa = PBXGroup;
+			children = (
+				C0FB726D193468DC00955AF5 /* GaitCheckTests.m */,
+				C0FB7268193468DC00955AF5 /* Supporting Files */,
+			);
+			path = GaitCheckTests;
+			sourceTree = "<group>";
+		};
+		C0FB7268193468DC00955AF5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C0FB7269193468DC00955AF5 /* GaitCheckTests-Info.plist */,
+				C0FB726A193468DC00955AF5 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C0FB723E193468DC00955AF5 /* GaitCheck */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0FB7271193468DC00955AF5 /* Build configuration list for PBXNativeTarget "GaitCheck" */;
+			buildPhases = (
+				C0FB723B193468DC00955AF5 /* Sources */,
+				C0FB723C193468DC00955AF5 /* Frameworks */,
+				C0FB723D193468DC00955AF5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GaitCheck;
+			productName = GaitCheck;
+			productReference = C0FB723F193468DC00955AF5 /* GaitCheck.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C0FB725F193468DC00955AF5 /* GaitCheckTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0FB7274193468DC00955AF5 /* Build configuration list for PBXNativeTarget "GaitCheckTests" */;
+			buildPhases = (
+				C0FB725C193468DC00955AF5 /* Sources */,
+				C0FB725D193468DC00955AF5 /* Frameworks */,
+				C0FB725E193468DC00955AF5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C0FB7266193468DC00955AF5 /* PBXTargetDependency */,
+			);
+			name = GaitCheckTests;
+			productName = GaitCheckTests;
+			productReference = C0FB7260193468DC00955AF5 /* GaitCheckTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C0FB7237193468DC00955AF5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = GaitCheck;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Jesse Clayburgh";
+				TargetAttributes = {
+					C0FB725F193468DC00955AF5 = {
+						TestTargetID = C0FB723E193468DC00955AF5;
+					};
+				};
+			};
+			buildConfigurationList = C0FB723A193468DC00955AF5 /* Build configuration list for PBXProject "GaitCheck" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C0FB7236193468DC00955AF5;
+			productRefGroup = C0FB7240193468DC00955AF5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C0FB723E193468DC00955AF5 /* GaitCheck */,
+				C0FB725F193468DC00955AF5 /* GaitCheckTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C0FB723D193468DC00955AF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0FB725B193468DC00955AF5 /* Images.xcassets in Resources */,
+				C0FB724D193468DC00955AF5 /* InfoPlist.strings in Resources */,
+				C0FB7256193468DC00955AF5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0FB725E193468DC00955AF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0FB726C193468DC00955AF5 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C0FB723B193468DC00955AF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0FB7253193468DC00955AF5 /* GaitCheckAppDelegate.m in Sources */,
+				C0FB724F193468DC00955AF5 /* main.m in Sources */,
+				C0FB7259193468DC00955AF5 /* GaitCheckViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0FB725C193468DC00955AF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0FB726E193468DC00955AF5 /* GaitCheckTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C0FB7266193468DC00955AF5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C0FB723E193468DC00955AF5 /* GaitCheck */;
+			targetProxy = C0FB7265193468DC00955AF5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C0FB724B193468DC00955AF5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C0FB724C193468DC00955AF5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C0FB7254193468DC00955AF5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C0FB7255193468DC00955AF5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C0FB726A193468DC00955AF5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C0FB726B193468DC00955AF5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C0FB726F193468DC00955AF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C0FB7270193468DC00955AF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C0FB7272193468DC00955AF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GaitCheck/GaitCheck-Prefix.pch";
+				INFOPLIST_FILE = "GaitCheck/GaitCheck-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C0FB7273193468DC00955AF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GaitCheck/GaitCheck-Prefix.pch";
+				INFOPLIST_FILE = "GaitCheck/GaitCheck-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C0FB7275193468DC00955AF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GaitCheck.app/GaitCheck";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GaitCheck/GaitCheck-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "GaitCheckTests/GaitCheckTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		C0FB7276193468DC00955AF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GaitCheck.app/GaitCheck";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GaitCheck/GaitCheck-Prefix.pch";
+				INFOPLIST_FILE = "GaitCheckTests/GaitCheckTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C0FB723A193468DC00955AF5 /* Build configuration list for PBXProject "GaitCheck" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0FB726F193468DC00955AF5 /* Debug */,
+				C0FB7270193468DC00955AF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0FB7271193468DC00955AF5 /* Build configuration list for PBXNativeTarget "GaitCheck" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0FB7272193468DC00955AF5 /* Debug */,
+				C0FB7273193468DC00955AF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C0FB7274193468DC00955AF5 /* Build configuration list for PBXNativeTarget "GaitCheckTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0FB7275193468DC00955AF5 /* Debug */,
+				C0FB7276193468DC00955AF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C0FB7237193468DC00955AF5 /* Project object */;
+}
