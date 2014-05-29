@@ -7,6 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C00E07DD19370CE3004DBBAF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C00E07DC19370CE3004DBBAF /* AudioToolbox.framework */; };
+		C00E07E019370D79004DBBAF /* SoundPairTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C00E07DF19370D79004DBBAF /* SoundPairTVC.m */; };
+		C039E61C1935C2AA00FF2D32 /* RootVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C039E61B1935C2AA00FF2D32 /* RootVC.m */; };
+		C039E61F1935C3F300FF2D32 /* GaitRecordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C039E61E1935C3F300FF2D32 /* GaitRecordVC.m */; };
+		C04E14C61935D7FD00CCF53B /* HistoryTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C04E14C51935D7FD00CCF53B /* HistoryTVC.m */; };
+		C04E14C91935D98700CCF53B /* SettingsTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C04E14C81935D98700CCF53B /* SettingsTVC.m */; };
+		C04E14CC1935DDCA00CCF53B /* MeasurementSensitivityVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C04E14CB1935DDCA00CCF53B /* MeasurementSensitivityVC.m */; };
+		C04E14D31935DDEE00CCF53B /* DKCircularSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = C04E14CE1935DDEE00CCF53B /* DKCircularSlider.m */; };
+		C04E14D41935DDEE00CCF53B /* DKRepeatableButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C04E14D01935DDEE00CCF53B /* DKRepeatableButton.m */; };
+		C04E14DA1935DF3700CCF53B /* ContactSettingsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C04E14D91935DF3700CCF53B /* ContactSettingsVC.m */; };
+		C04E14DD1935DF5300CCF53B /* LiftOffSettingsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C04E14DC1935DF5300CCF53B /* LiftOffSettingsVC.m */; };
+		C08A7F5B1935BBCC00024CF5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C08A7F5A1935BBCC00024CF5 /* Images.xcassets */; };
+		C08A7F631935C21400024CF5 /* RECommonFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = C08A7F5E1935C21400024CF5 /* RECommonFunctions.m */; };
+		C08A7F641935C21400024CF5 /* RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = C08A7F601935C21400024CF5 /* RESideMenu.m */; };
+		C08A7F651935C21400024CF5 /* UIViewController+RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = C08A7F621935C21400024CF5 /* UIViewController+RESideMenu.m */; };
+		C0DA43341935C60A0015CF9D /* MenuVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C0DA43331935C60A0015CF9D /* MenuVC.m */; };
 		C0FB7243193468DC00955AF5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0FB7242193468DC00955AF5 /* Foundation.framework */; };
 		C0FB7245193468DC00955AF5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0FB7244193468DC00955AF5 /* CoreGraphics.framework */; };
 		C0FB7247193468DC00955AF5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0FB7246193468DC00955AF5 /* UIKit.framework */; };
@@ -14,13 +30,13 @@
 		C0FB724F193468DC00955AF5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C0FB724E193468DC00955AF5 /* main.m */; };
 		C0FB7253193468DC00955AF5 /* GaitCheckAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C0FB7252193468DC00955AF5 /* GaitCheckAppDelegate.m */; };
 		C0FB7256193468DC00955AF5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0FB7254193468DC00955AF5 /* Main.storyboard */; };
-		C0FB7259193468DC00955AF5 /* GaitCheckViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0FB7258193468DC00955AF5 /* GaitCheckViewController.m */; };
-		C0FB725B193468DC00955AF5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0FB725A193468DC00955AF5 /* Images.xcassets */; };
 		C0FB7262193468DC00955AF5 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0FB7261193468DC00955AF5 /* XCTest.framework */; };
 		C0FB7263193468DC00955AF5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0FB7242193468DC00955AF5 /* Foundation.framework */; };
 		C0FB7264193468DC00955AF5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0FB7246193468DC00955AF5 /* UIKit.framework */; };
 		C0FB726C193468DC00955AF5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C0FB726A193468DC00955AF5 /* InfoPlist.strings */; };
 		C0FB726E193468DC00955AF5 /* GaitCheckTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C0FB726D193468DC00955AF5 /* GaitCheckTests.m */; };
+		C0FB72781934694400955AF5 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0FB72771934694400955AF5 /* CoreMotion.framework */; };
+		C0FCB27B1935EB6200D8F95B /* UserDefaultsHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C0FCB27A1935EB6200D8F95B /* UserDefaultsHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +50,36 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C00E07DC19370CE3004DBBAF /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		C00E07DE19370D79004DBBAF /* SoundPairTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundPairTVC.h; sourceTree = "<group>"; };
+		C00E07DF19370D79004DBBAF /* SoundPairTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundPairTVC.m; sourceTree = "<group>"; };
+		C039E61A1935C2AA00FF2D32 /* RootVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootVC.h; sourceTree = "<group>"; };
+		C039E61B1935C2AA00FF2D32 /* RootVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootVC.m; sourceTree = "<group>"; };
+		C039E61D1935C3F300FF2D32 /* GaitRecordVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GaitRecordVC.h; sourceTree = "<group>"; };
+		C039E61E1935C3F300FF2D32 /* GaitRecordVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GaitRecordVC.m; sourceTree = "<group>"; };
+		C04E14C41935D7FD00CCF53B /* HistoryTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryTVC.h; sourceTree = "<group>"; };
+		C04E14C51935D7FD00CCF53B /* HistoryTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryTVC.m; sourceTree = "<group>"; };
+		C04E14C71935D98700CCF53B /* SettingsTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsTVC.h; sourceTree = "<group>"; };
+		C04E14C81935D98700CCF53B /* SettingsTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsTVC.m; sourceTree = "<group>"; };
+		C04E14CA1935DDCA00CCF53B /* MeasurementSensitivityVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeasurementSensitivityVC.h; sourceTree = "<group>"; };
+		C04E14CB1935DDCA00CCF53B /* MeasurementSensitivityVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeasurementSensitivityVC.m; sourceTree = "<group>"; };
+		C04E14CD1935DDEE00CCF53B /* DKCircularSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKCircularSlider.h; sourceTree = "<group>"; };
+		C04E14CE1935DDEE00CCF53B /* DKCircularSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKCircularSlider.m; sourceTree = "<group>"; };
+		C04E14CF1935DDEE00CCF53B /* DKRepeatableButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKRepeatableButton.h; sourceTree = "<group>"; };
+		C04E14D01935DDEE00CCF53B /* DKRepeatableButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKRepeatableButton.m; sourceTree = "<group>"; };
+		C04E14D81935DF3700CCF53B /* ContactSettingsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactSettingsVC.h; sourceTree = "<group>"; };
+		C04E14D91935DF3700CCF53B /* ContactSettingsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactSettingsVC.m; sourceTree = "<group>"; };
+		C04E14DB1935DF5300CCF53B /* LiftOffSettingsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiftOffSettingsVC.h; sourceTree = "<group>"; };
+		C04E14DC1935DF5300CCF53B /* LiftOffSettingsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiftOffSettingsVC.m; sourceTree = "<group>"; };
+		C08A7F5A1935BBCC00024CF5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C08A7F5D1935C21400024CF5 /* RECommonFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RECommonFunctions.h; sourceTree = "<group>"; };
+		C08A7F5E1935C21400024CF5 /* RECommonFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RECommonFunctions.m; sourceTree = "<group>"; };
+		C08A7F5F1935C21400024CF5 /* RESideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESideMenu.h; sourceTree = "<group>"; };
+		C08A7F601935C21400024CF5 /* RESideMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESideMenu.m; sourceTree = "<group>"; };
+		C08A7F611935C21400024CF5 /* UIViewController+RESideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+RESideMenu.h"; sourceTree = "<group>"; };
+		C08A7F621935C21400024CF5 /* UIViewController+RESideMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+RESideMenu.m"; sourceTree = "<group>"; };
+		C0DA43321935C60A0015CF9D /* MenuVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuVC.h; sourceTree = "<group>"; };
+		C0DA43331935C60A0015CF9D /* MenuVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuVC.m; sourceTree = "<group>"; };
 		C0FB723F193468DC00955AF5 /* GaitCheck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GaitCheck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0FB7242193468DC00955AF5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C0FB7244193468DC00955AF5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -45,14 +91,15 @@
 		C0FB7251193468DC00955AF5 /* GaitCheckAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GaitCheckAppDelegate.h; sourceTree = "<group>"; };
 		C0FB7252193468DC00955AF5 /* GaitCheckAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GaitCheckAppDelegate.m; sourceTree = "<group>"; };
 		C0FB7255193468DC00955AF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C0FB7257193468DC00955AF5 /* GaitCheckViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GaitCheckViewController.h; sourceTree = "<group>"; };
-		C0FB7258193468DC00955AF5 /* GaitCheckViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GaitCheckViewController.m; sourceTree = "<group>"; };
-		C0FB725A193468DC00955AF5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C0FB7260193468DC00955AF5 /* GaitCheckTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GaitCheckTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0FB7261193468DC00955AF5 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		C0FB7269193468DC00955AF5 /* GaitCheckTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GaitCheckTests-Info.plist"; sourceTree = "<group>"; };
 		C0FB726B193468DC00955AF5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C0FB726D193468DC00955AF5 /* GaitCheckTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GaitCheckTests.m; sourceTree = "<group>"; };
+		C0FB72771934694400955AF5 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		C0FCB2781935E52300D8F95B /* UserPreferencesKeys.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserPreferencesKeys.h; sourceTree = "<group>"; };
+		C0FCB2791935EB6200D8F95B /* UserDefaultsHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserDefaultsHelper.h; path = ../UserDefaultsHelper.h; sourceTree = "<group>"; };
+		C0FCB27A1935EB6200D8F95B /* UserDefaultsHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserDefaultsHelper.m; path = ../UserDefaultsHelper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +107,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C00E07DD19370CE3004DBBAF /* AudioToolbox.framework in Frameworks */,
+				C0FB72781934694400955AF5 /* CoreMotion.framework in Frameworks */,
 				C0FB7245193468DC00955AF5 /* CoreGraphics.framework in Frameworks */,
 				C0FB7247193468DC00955AF5 /* UIKit.framework in Frameworks */,
 				C0FB7243193468DC00955AF5 /* Foundation.framework in Frameworks */,
@@ -79,6 +128,71 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C00E07E119370D83004DBBAF /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				C04E14C71935D98700CCF53B /* SettingsTVC.h */,
+				C04E14C81935D98700CCF53B /* SettingsTVC.m */,
+				C00E07E219370D8B004DBBAF /* Sensitivity */,
+				C00E07DE19370D79004DBBAF /* SoundPairTVC.h */,
+				C00E07DF19370D79004DBBAF /* SoundPairTVC.m */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+		C00E07E219370D8B004DBBAF /* Sensitivity */ = {
+			isa = PBXGroup;
+			children = (
+				C04E14CA1935DDCA00CCF53B /* MeasurementSensitivityVC.h */,
+				C04E14CB1935DDCA00CCF53B /* MeasurementSensitivityVC.m */,
+				C04E14D81935DF3700CCF53B /* ContactSettingsVC.h */,
+				C04E14D91935DF3700CCF53B /* ContactSettingsVC.m */,
+				C04E14DB1935DF5300CCF53B /* LiftOffSettingsVC.h */,
+				C04E14DC1935DF5300CCF53B /* LiftOffSettingsVC.m */,
+			);
+			name = Sensitivity;
+			sourceTree = "<group>";
+		};
+		C039E6201935C3FE00FF2D32 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C039E61A1935C2AA00FF2D32 /* RootVC.h */,
+				C039E61B1935C2AA00FF2D32 /* RootVC.m */,
+				C0DA43321935C60A0015CF9D /* MenuVC.h */,
+				C0DA43331935C60A0015CF9D /* MenuVC.m */,
+				C039E61D1935C3F300FF2D32 /* GaitRecordVC.h */,
+				C039E61E1935C3F300FF2D32 /* GaitRecordVC.m */,
+				C04E14C41935D7FD00CCF53B /* HistoryTVC.h */,
+				C04E14C51935D7FD00CCF53B /* HistoryTVC.m */,
+				C00E07E119370D83004DBBAF /* Settings */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		C04E14D71935DE1600CCF53B /* DKCircularSlider */ = {
+			isa = PBXGroup;
+			children = (
+				C04E14CD1935DDEE00CCF53B /* DKCircularSlider.h */,
+				C04E14CE1935DDEE00CCF53B /* DKCircularSlider.m */,
+				C04E14CF1935DDEE00CCF53B /* DKRepeatableButton.h */,
+				C04E14D01935DDEE00CCF53B /* DKRepeatableButton.m */,
+			);
+			name = DKCircularSlider;
+			sourceTree = "<group>";
+		};
+		C08A7F5C1935C20100024CF5 /* RESideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				C08A7F5D1935C21400024CF5 /* RECommonFunctions.h */,
+				C08A7F5E1935C21400024CF5 /* RECommonFunctions.m */,
+				C08A7F5F1935C21400024CF5 /* RESideMenu.h */,
+				C08A7F601935C21400024CF5 /* RESideMenu.m */,
+				C08A7F611935C21400024CF5 /* UIViewController+RESideMenu.h */,
+				C08A7F621935C21400024CF5 /* UIViewController+RESideMenu.m */,
+			);
+			name = RESideMenu;
+			sourceTree = "<group>";
+		};
 		C0FB7236193468DC00955AF5 = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +215,8 @@
 		C0FB7241193468DC00955AF5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C00E07DC19370CE3004DBBAF /* AudioToolbox.framework */,
+				C0FB72771934694400955AF5 /* CoreMotion.framework */,
 				C0FB7242193468DC00955AF5 /* Foundation.framework */,
 				C0FB7244193468DC00955AF5 /* CoreGraphics.framework */,
 				C0FB7246193468DC00955AF5 /* UIKit.framework */,
@@ -112,12 +228,15 @@
 		C0FB7248193468DC00955AF5 /* GaitCheck */ = {
 			isa = PBXGroup;
 			children = (
+				C0FCB2791935EB6200D8F95B /* UserDefaultsHelper.h */,
+				C0FCB27A1935EB6200D8F95B /* UserDefaultsHelper.m */,
 				C0FB7251193468DC00955AF5 /* GaitCheckAppDelegate.h */,
 				C0FB7252193468DC00955AF5 /* GaitCheckAppDelegate.m */,
+				C0FCB2781935E52300D8F95B /* UserPreferencesKeys.h */,
 				C0FB7254193468DC00955AF5 /* Main.storyboard */,
-				C0FB7257193468DC00955AF5 /* GaitCheckViewController.h */,
-				C0FB7258193468DC00955AF5 /* GaitCheckViewController.m */,
-				C0FB725A193468DC00955AF5 /* Images.xcassets */,
+				C04E14D71935DE1600CCF53B /* DKCircularSlider */,
+				C039E6201935C3FE00FF2D32 /* Views */,
+				C08A7F5C1935C20100024CF5 /* RESideMenu */,
 				C0FB7249193468DC00955AF5 /* Supporting Files */,
 			);
 			path = GaitCheck;
@@ -126,6 +245,7 @@
 		C0FB7249193468DC00955AF5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C08A7F5A1935BBCC00024CF5 /* Images.xcassets */,
 				C0FB724A193468DC00955AF5 /* GaitCheck-Info.plist */,
 				C0FB724B193468DC00955AF5 /* InfoPlist.strings */,
 				C0FB724E193468DC00955AF5 /* main.m */,
@@ -229,7 +349,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0FB725B193468DC00955AF5 /* Images.xcassets in Resources */,
+				C08A7F5B1935BBCC00024CF5 /* Images.xcassets in Resources */,
 				C0FB724D193468DC00955AF5 /* InfoPlist.strings in Resources */,
 				C0FB7256193468DC00955AF5 /* Main.storyboard in Resources */,
 			);
@@ -250,9 +370,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C04E14D31935DDEE00CCF53B /* DKCircularSlider.m in Sources */,
+				C039E61C1935C2AA00FF2D32 /* RootVC.m in Sources */,
+				C04E14DD1935DF5300CCF53B /* LiftOffSettingsVC.m in Sources */,
+				C00E07E019370D79004DBBAF /* SoundPairTVC.m in Sources */,
 				C0FB7253193468DC00955AF5 /* GaitCheckAppDelegate.m in Sources */,
+				C04E14CC1935DDCA00CCF53B /* MeasurementSensitivityVC.m in Sources */,
+				C04E14C91935D98700CCF53B /* SettingsTVC.m in Sources */,
+				C0FCB27B1935EB6200D8F95B /* UserDefaultsHelper.m in Sources */,
 				C0FB724F193468DC00955AF5 /* main.m in Sources */,
-				C0FB7259193468DC00955AF5 /* GaitCheckViewController.m in Sources */,
+				C0DA43341935C60A0015CF9D /* MenuVC.m in Sources */,
+				C08A7F641935C21400024CF5 /* RESideMenu.m in Sources */,
+				C04E14C61935D7FD00CCF53B /* HistoryTVC.m in Sources */,
+				C08A7F631935C21400024CF5 /* RECommonFunctions.m in Sources */,
+				C039E61F1935C3F300FF2D32 /* GaitRecordVC.m in Sources */,
+				C08A7F651935C21400024CF5 /* UIViewController+RESideMenu.m in Sources */,
+				C04E14DA1935DF3700CCF53B /* ContactSettingsVC.m in Sources */,
+				C04E14D41935DDEE00CCF53B /* DKRepeatableButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,6 +591,7 @@
 				C0FB7273193468DC00955AF5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C0FB7274193468DC00955AF5 /* Build configuration list for PBXNativeTarget "GaitCheckTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +600,7 @@
 				C0FB7276193468DC00955AF5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
