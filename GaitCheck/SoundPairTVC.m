@@ -19,6 +19,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+//    UITableViewCell *cell = [self cellForRowAtIndexPath:1];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -27,13 +28,25 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
+//- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    static NSString *CellIdentifier = @"Cell";
+//    tableView deque
+//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+//    int selectedIndex = [UserDefaultsHelper selectedSoundIndex];
+//    if (indexPath.row == selectedIndex) {
+//        cell.accessoryType = UITableViewCellAccessoryCheckmark;
+//    }
+////    cell.textLabel.text = [[audioFileList objectAtIndex:indexPath.row] lastPathComponent];
+//    return cell;
+//}
 
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NSURL *tone1;
     NSURL *tone2;
-    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+//    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
     
     if (indexPath.row == 0) {
         tone1 = [NSURL URLWithString:@"System/Library/Audio/UISounds/short_double_low.caf"];
@@ -50,10 +63,11 @@
         [NSThread sleepForTimeInterval:0.75];
         [self playSound:tone2];
     }
-    
     NSArray *tones = [[NSArray alloc] initWithObjects: [tone1 absoluteString], [tone2 absoluteString], nil];
     [UserDefaultsHelper setSoundPair:tones];
-    cell.accessoryType = UITableViewCellAccessoryCheckmark;
+    [UserDefaultsHelper setSoundIndex:indexPath.row];
+//    cell.accessoryType = UITableViewCellAccessoryCheckmark;
+    [self.tableView reloadData];
 }
 
 - (void)playSound:(NSURL *)url

@@ -11,13 +11,27 @@
 		C00E07E019370D79004DBBAF /* SoundPairTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C00E07DF19370D79004DBBAF /* SoundPairTVC.m */; };
 		C039E61C1935C2AA00FF2D32 /* RootVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C039E61B1935C2AA00FF2D32 /* RootVC.m */; };
 		C039E61F1935C3F300FF2D32 /* GaitRecordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C039E61E1935C3F300FF2D32 /* GaitRecordVC.m */; };
-		C04E14C61935D7FD00CCF53B /* HistoryTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C04E14C51935D7FD00CCF53B /* HistoryTVC.m */; };
 		C04E14C91935D98700CCF53B /* SettingsTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C04E14C81935D98700CCF53B /* SettingsTVC.m */; };
 		C04E14CC1935DDCA00CCF53B /* MeasurementSensitivityVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C04E14CB1935DDCA00CCF53B /* MeasurementSensitivityVC.m */; };
 		C04E14D31935DDEE00CCF53B /* DKCircularSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = C04E14CE1935DDEE00CCF53B /* DKCircularSlider.m */; };
 		C04E14D41935DDEE00CCF53B /* DKRepeatableButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C04E14D01935DDEE00CCF53B /* DKRepeatableButton.m */; };
 		C04E14DA1935DF3700CCF53B /* ContactSettingsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C04E14D91935DF3700CCF53B /* ContactSettingsVC.m */; };
 		C04E14DD1935DF5300CCF53B /* LiftOffSettingsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C04E14DC1935DF5300CCF53B /* LiftOffSettingsVC.m */; };
+		C07E440D1939C153006C1509 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C07E440C1939C153006C1509 /* CFNetwork.framework */; };
+		C07E440F1939C161006C1509 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C07E440E1939C161006C1509 /* CoreLocation.framework */; };
+		C07E44111939C168006C1509 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C07E44101939C168006C1509 /* libz.dylib */; };
+		C07E44131939C170006C1509 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C07E44121939C170006C1509 /* MobileCoreServices.framework */; };
+		C07E44151939C176006C1509 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C07E44141939C176006C1509 /* QuartzCore.framework */; };
+		C07E44171939C17D006C1509 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C07E44161939C17D006C1509 /* Security.framework */; };
+		C07E44191939C184006C1509 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C07E44181939C184006C1509 /* StoreKit.framework */; };
+		C07E441B1939C18E006C1509 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C07E441A1939C18E006C1509 /* SystemConfiguration.framework */; };
+		C07E441E1939C9E4006C1509 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C07E441C1939C9E4006C1509 /* Model.xcdatamodeld */; };
+		C07E44221939CAA3006C1509 /* Recording.m in Sources */ = {isa = PBXBuildFile; fileRef = C07E44211939CAA3006C1509 /* Recording.m */; };
+		C07E44261939CE23006C1509 /* CoreDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C07E44251939CE23006C1509 /* CoreDataTableViewController.m */; };
+		C07E442D1939CF29006C1509 /* Recording+Create.m in Sources */ = {isa = PBXBuildFile; fileRef = C07E442C1939CF29006C1509 /* Recording+Create.m */; };
+		C07E44301939D634006C1509 /* HistoryCDTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C07E442F1939D634006C1509 /* HistoryCDTVC.m */; };
+		C07E4432193A8D6E006C1509 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C07E4431193A8D6E006C1509 /* MessageUI.framework */; };
+		C07E4438193D1C37006C1509 /* MotionFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = C07E4437193D1C37006C1509 /* MotionFilter.m */; };
 		C08A7F5B1935BBCC00024CF5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C08A7F5A1935BBCC00024CF5 /* Images.xcassets */; };
 		C08A7F631935C21400024CF5 /* RECommonFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = C08A7F5E1935C21400024CF5 /* RECommonFunctions.m */; };
 		C08A7F641935C21400024CF5 /* RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = C08A7F601935C21400024CF5 /* RESideMenu.m */; };
@@ -57,8 +71,6 @@
 		C039E61B1935C2AA00FF2D32 /* RootVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootVC.m; sourceTree = "<group>"; };
 		C039E61D1935C3F300FF2D32 /* GaitRecordVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GaitRecordVC.h; sourceTree = "<group>"; };
 		C039E61E1935C3F300FF2D32 /* GaitRecordVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GaitRecordVC.m; sourceTree = "<group>"; };
-		C04E14C41935D7FD00CCF53B /* HistoryTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryTVC.h; sourceTree = "<group>"; };
-		C04E14C51935D7FD00CCF53B /* HistoryTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryTVC.m; sourceTree = "<group>"; };
 		C04E14C71935D98700CCF53B /* SettingsTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsTVC.h; sourceTree = "<group>"; };
 		C04E14C81935D98700CCF53B /* SettingsTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsTVC.m; sourceTree = "<group>"; };
 		C04E14CA1935DDCA00CCF53B /* MeasurementSensitivityVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeasurementSensitivityVC.h; sourceTree = "<group>"; };
@@ -71,6 +83,27 @@
 		C04E14D91935DF3700CCF53B /* ContactSettingsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactSettingsVC.m; sourceTree = "<group>"; };
 		C04E14DB1935DF5300CCF53B /* LiftOffSettingsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiftOffSettingsVC.h; sourceTree = "<group>"; };
 		C04E14DC1935DF5300CCF53B /* LiftOffSettingsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiftOffSettingsVC.m; sourceTree = "<group>"; };
+		C07E440C1939C153006C1509 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		C07E440E1939C161006C1509 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		C07E44101939C168006C1509 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		C07E44121939C170006C1509 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		C07E44141939C176006C1509 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		C07E44161939C17D006C1509 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		C07E44181939C184006C1509 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		C07E441A1939C18E006C1509 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		C07E441D1939C9E4006C1509 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		C07E44201939CAA3006C1509 /* Recording.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Recording.h; sourceTree = "<group>"; };
+		C07E44211939CAA3006C1509 /* Recording.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Recording.m; sourceTree = "<group>"; };
+		C07E44231939CC90006C1509 /* RecordingDatabaseAvailability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordingDatabaseAvailability.h; sourceTree = "<group>"; };
+		C07E44241939CE23006C1509 /* CoreDataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataTableViewController.h; sourceTree = "<group>"; };
+		C07E44251939CE23006C1509 /* CoreDataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataTableViewController.m; sourceTree = "<group>"; };
+		C07E442B1939CF29006C1509 /* Recording+Create.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Recording+Create.h"; path = "../Recording+Create.h"; sourceTree = "<group>"; };
+		C07E442C1939CF29006C1509 /* Recording+Create.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Recording+Create.m"; path = "../Recording+Create.m"; sourceTree = "<group>"; };
+		C07E442E1939D634006C1509 /* HistoryCDTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryCDTVC.h; sourceTree = "<group>"; };
+		C07E442F1939D634006C1509 /* HistoryCDTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryCDTVC.m; sourceTree = "<group>"; };
+		C07E4431193A8D6E006C1509 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		C07E4436193D1C37006C1509 /* MotionFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MotionFilter.h; sourceTree = "<group>"; };
+		C07E4437193D1C37006C1509 /* MotionFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MotionFilter.m; sourceTree = "<group>"; };
 		C08A7F5A1935BBCC00024CF5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C08A7F5D1935C21400024CF5 /* RECommonFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RECommonFunctions.h; sourceTree = "<group>"; };
 		C08A7F5E1935C21400024CF5 /* RECommonFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RECommonFunctions.m; sourceTree = "<group>"; };
@@ -107,9 +140,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C07E4432193A8D6E006C1509 /* MessageUI.framework in Frameworks */,
+				C07E441B1939C18E006C1509 /* SystemConfiguration.framework in Frameworks */,
+				C07E44191939C184006C1509 /* StoreKit.framework in Frameworks */,
+				C07E44171939C17D006C1509 /* Security.framework in Frameworks */,
+				C07E44151939C176006C1509 /* QuartzCore.framework in Frameworks */,
+				C07E44131939C170006C1509 /* MobileCoreServices.framework in Frameworks */,
+				C07E44111939C168006C1509 /* libz.dylib in Frameworks */,
+				C07E440F1939C161006C1509 /* CoreLocation.framework in Frameworks */,
+				C0FB7245193468DC00955AF5 /* CoreGraphics.framework in Frameworks */,
+				C07E440D1939C153006C1509 /* CFNetwork.framework in Frameworks */,
 				C00E07DD19370CE3004DBBAF /* AudioToolbox.framework in Frameworks */,
 				C0FB72781934694400955AF5 /* CoreMotion.framework in Frameworks */,
-				C0FB7245193468DC00955AF5 /* CoreGraphics.framework in Frameworks */,
 				C0FB7247193468DC00955AF5 /* UIKit.framework in Frameworks */,
 				C0FB7243193468DC00955AF5 /* Foundation.framework in Frameworks */,
 			);
@@ -156,15 +198,7 @@
 		C039E6201935C3FE00FF2D32 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				C039E61A1935C2AA00FF2D32 /* RootVC.h */,
-				C039E61B1935C2AA00FF2D32 /* RootVC.m */,
-				C0DA43321935C60A0015CF9D /* MenuVC.h */,
-				C0DA43331935C60A0015CF9D /* MenuVC.m */,
-				C039E61D1935C3F300FF2D32 /* GaitRecordVC.h */,
-				C039E61E1935C3F300FF2D32 /* GaitRecordVC.m */,
-				C04E14C41935D7FD00CCF53B /* HistoryTVC.h */,
-				C04E14C51935D7FD00CCF53B /* HistoryTVC.m */,
-				C00E07E119370D83004DBBAF /* Settings */,
+				C0FB7254193468DC00955AF5 /* Main.storyboard */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -178,6 +212,36 @@
 				C04E14D01935DDEE00CCF53B /* DKRepeatableButton.m */,
 			);
 			name = DKCircularSlider;
+			sourceTree = "<group>";
+		};
+		C07E441F1939CA61006C1509 /* Core Data Models */ = {
+			isa = PBXGroup;
+			children = (
+				C07E442B1939CF29006C1509 /* Recording+Create.h */,
+				C07E442C1939CF29006C1509 /* Recording+Create.m */,
+				C07E44201939CAA3006C1509 /* Recording.h */,
+				C07E44211939CAA3006C1509 /* Recording.m */,
+				C07E441C1939C9E4006C1509 /* Model.xcdatamodeld */,
+			);
+			name = "Core Data Models";
+			sourceTree = "<group>";
+		};
+		C07E44271939CE31006C1509 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C039E61A1935C2AA00FF2D32 /* RootVC.h */,
+				C039E61B1935C2AA00FF2D32 /* RootVC.m */,
+				C039E61D1935C3F300FF2D32 /* GaitRecordVC.h */,
+				C039E61E1935C3F300FF2D32 /* GaitRecordVC.m */,
+				C07E44241939CE23006C1509 /* CoreDataTableViewController.h */,
+				C07E44251939CE23006C1509 /* CoreDataTableViewController.m */,
+				C07E442E1939D634006C1509 /* HistoryCDTVC.h */,
+				C07E442F1939D634006C1509 /* HistoryCDTVC.m */,
+				C0DA43321935C60A0015CF9D /* MenuVC.h */,
+				C0DA43331935C60A0015CF9D /* MenuVC.m */,
+				C00E07E119370D83004DBBAF /* Settings */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 		C08A7F5C1935C20100024CF5 /* RESideMenu */ = {
@@ -215,6 +279,15 @@
 		C0FB7241193468DC00955AF5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C07E4431193A8D6E006C1509 /* MessageUI.framework */,
+				C07E441A1939C18E006C1509 /* SystemConfiguration.framework */,
+				C07E44181939C184006C1509 /* StoreKit.framework */,
+				C07E44161939C17D006C1509 /* Security.framework */,
+				C07E44141939C176006C1509 /* QuartzCore.framework */,
+				C07E44121939C170006C1509 /* MobileCoreServices.framework */,
+				C07E44101939C168006C1509 /* libz.dylib */,
+				C07E440E1939C161006C1509 /* CoreLocation.framework */,
+				C07E440C1939C153006C1509 /* CFNetwork.framework */,
 				C00E07DC19370CE3004DBBAF /* AudioToolbox.framework */,
 				C0FB72771934694400955AF5 /* CoreMotion.framework */,
 				C0FB7242193468DC00955AF5 /* Foundation.framework */,
@@ -228,15 +301,19 @@
 		C0FB7248193468DC00955AF5 /* GaitCheck */ = {
 			isa = PBXGroup;
 			children = (
+				C07E4436193D1C37006C1509 /* MotionFilter.h */,
+				C07E4437193D1C37006C1509 /* MotionFilter.m */,
 				C0FCB2791935EB6200D8F95B /* UserDefaultsHelper.h */,
 				C0FCB27A1935EB6200D8F95B /* UserDefaultsHelper.m */,
 				C0FB7251193468DC00955AF5 /* GaitCheckAppDelegate.h */,
 				C0FB7252193468DC00955AF5 /* GaitCheckAppDelegate.m */,
+				C07E44231939CC90006C1509 /* RecordingDatabaseAvailability.h */,
 				C0FCB2781935E52300D8F95B /* UserPreferencesKeys.h */,
-				C0FB7254193468DC00955AF5 /* Main.storyboard */,
-				C04E14D71935DE1600CCF53B /* DKCircularSlider */,
+				C07E44271939CE31006C1509 /* Controllers */,
 				C039E6201935C3FE00FF2D32 /* Views */,
+				C07E441F1939CA61006C1509 /* Core Data Models */,
 				C08A7F5C1935C20100024CF5 /* RESideMenu */,
+				C04E14D71935DE1600CCF53B /* DKCircularSlider */,
 				C0FB7249193468DC00955AF5 /* Supporting Files */,
 			);
 			path = GaitCheck;
@@ -373,19 +450,24 @@
 				C04E14D31935DDEE00CCF53B /* DKCircularSlider.m in Sources */,
 				C039E61C1935C2AA00FF2D32 /* RootVC.m in Sources */,
 				C04E14DD1935DF5300CCF53B /* LiftOffSettingsVC.m in Sources */,
+				C07E4438193D1C37006C1509 /* MotionFilter.m in Sources */,
 				C00E07E019370D79004DBBAF /* SoundPairTVC.m in Sources */,
 				C0FB7253193468DC00955AF5 /* GaitCheckAppDelegate.m in Sources */,
+				C07E441E1939C9E4006C1509 /* Model.xcdatamodeld in Sources */,
 				C04E14CC1935DDCA00CCF53B /* MeasurementSensitivityVC.m in Sources */,
 				C04E14C91935D98700CCF53B /* SettingsTVC.m in Sources */,
 				C0FCB27B1935EB6200D8F95B /* UserDefaultsHelper.m in Sources */,
 				C0FB724F193468DC00955AF5 /* main.m in Sources */,
 				C0DA43341935C60A0015CF9D /* MenuVC.m in Sources */,
+				C07E44221939CAA3006C1509 /* Recording.m in Sources */,
 				C08A7F641935C21400024CF5 /* RESideMenu.m in Sources */,
-				C04E14C61935D7FD00CCF53B /* HistoryTVC.m in Sources */,
+				C07E44261939CE23006C1509 /* CoreDataTableViewController.m in Sources */,
+				C07E44301939D634006C1509 /* HistoryCDTVC.m in Sources */,
 				C08A7F631935C21400024CF5 /* RECommonFunctions.m in Sources */,
 				C039E61F1935C3F300FF2D32 /* GaitRecordVC.m in Sources */,
 				C08A7F651935C21400024CF5 /* UIViewController+RESideMenu.m in Sources */,
 				C04E14DA1935DF3700CCF53B /* ContactSettingsVC.m in Sources */,
+				C07E442D1939CF29006C1509 /* Recording+Create.m in Sources */,
 				C04E14D41935DDEE00CCF53B /* DKRepeatableButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -603,6 +685,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C07E441C1939C9E4006C1509 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C07E441D1939C9E4006C1509 /* Model.xcdatamodel */,
+			);
+			currentVersion = C07E441D1939C9E4006C1509 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = C0FB7237193468DC00955AF5 /* Project object */;
 }

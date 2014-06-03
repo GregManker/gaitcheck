@@ -8,14 +8,28 @@
 
 #import "MenuVC.h"
 #import "GaitRecordVC.h"
+#import "RecordingDatabaseAvailability.h"
 
 @interface MenuVC ()
 
 @property (strong, readwrite, nonatomic) UITableView *tableView;
 
+@property (nonatomic, strong) NSManagedObjectContext *managedObjectContext;
+
 @end
 
 @implementation MenuVC
+
+- (void)awakeFromNib
+{
+    [[NSNotificationCenter defaultCenter] addObserverForName:RecordingDatabaseAvailabilityNotification
+                                                      object:nil
+                                                       queue:nil
+                                                  usingBlock:^(NSNotification *note) {
+                                                      self.managedObjectContext = note.userInfo[RecordingDatabaseAvailabilityContext];
+                                                  }];
+}
+
 
 - (void)viewDidLoad
 {
@@ -48,11 +62,13 @@
             [self.sideMenuViewController setContentViewController:[[UINavigationController alloc] initWithRootViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"gaitRecordVC"]]
                                                          animated:YES];
             [self.sideMenuViewController hideMenuViewController];
+            [self postNotification];
             break;
         case 1:
-            [self.sideMenuViewController setContentViewController:[[UINavigationController alloc] initWithRootViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"gaitHistoryVC"]]
+            [self.sideMenuViewController setContentViewController:[[UINavigationController alloc] initWithRootViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"HistoryCDTVC"]]
                                                          animated:YES];
             [self.sideMenuViewController hideMenuViewController];
+            [self postNotification];
             break;
         case 2:
             [self.sideMenuViewController setContentViewController:[[UINavigationController alloc] initWithRootViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"SettingsTVC"]]
@@ -62,6 +78,14 @@
         default:
             break;
     }
+}
+
+- (void)postNotification
+{
+    NSDictionary *userInfo =  @{ RecordingDatabaseAvailabilityContext : self.managedObjectContext };
+    [[NSNotificationCenter defaultCenter] postNotificationName:RecordingDatabaseAvailabilityNotification
+                                                        object:self
+                                                      userInfo:userInfo];
 }
 
 #pragma mark -

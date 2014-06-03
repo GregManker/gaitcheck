@@ -13,5 +13,6 @@
 #define CONTACT_SENSITIVITY @"contact_sensitivity"
 
 #define SELECTED_SOUND_PAIR @"selected_sound_pair"
+#define SELECTED_SOUND_INDEX @"selected_sound_index"
 
 #endif

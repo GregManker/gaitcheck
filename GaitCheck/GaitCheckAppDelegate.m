@@ -8,13 +8,36 @@
 
 #import "GaitCheckAppDelegate.h"
 #import "UserPreferencesKeys.h"
+#import "RecordingDatabaseAvailability.h"
+
+@interface GaitCheckAppDelegate()
+
+@property (strong, nonatomic) UIManagedDocument *recordingDatabase;
+@property (strong, nonatomic) NSManagedObjectContext *recordingDatabaseContext;
+
+@end
 
 @implementation GaitCheckAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     //    [NSThread sleepForTimeInterval:1.5];
-
+    self.recordingDatabase = [self createManagedDocument];
+    
+    BOOL fileExists = [[NSFileManager defaultManager] fileExistsAtPath:[[self mainManagedDocumentLocation] path]];
+    
+    if (fileExists) {
+        [self.recordingDatabase openWithCompletionHandler:^(BOOL success) {
+            if (!success) NSLog(@"File exists but couldn’t open document at %@",[self mainManagedDocumentLocation]);
+        }];
+    } else {
+        [self.recordingDatabase saveToURL:[self mainManagedDocumentLocation] forSaveOperation:UIDocumentSaveForCreating completionHandler:^(BOOL success) {
+            if (!success) NSLog(@"File does not exist and tried to create but couldn’t open document at %@",[self mainManagedDocumentLocation]);
+        }];
+    }
+    
+    self.recordingDatabaseContext = self.recordingDatabase.managedObjectContext;
+    
     return YES;
 }
 							
@@ -43,6 +66,36 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (void)setRecordingDatabaseContext:(NSManagedObjectContext *)recordingDatabaseContext
+{
+    _recordingDatabaseContext = recordingDatabaseContext;
+    
+    // let everyone who might be interested know this context is available
+    // this happens very early in the running of our application
+    // it would make NO SENSE to listen to this radio station in a View Controller that was segued to, for example
+    // (but that's okay because a segued-to View Controller would presumably be "prepared" by being given a context to work in)
+    NSDictionary *userInfo = self.recordingDatabaseContext ? @{ RecordingDatabaseAvailabilityContext : self.recordingDatabaseContext } : nil;
+    [[NSNotificationCenter defaultCenter] postNotificationName:RecordingDatabaseAvailabilityNotification
+                                                        object:self
+                                                      userInfo:userInfo];
+    
+}
+
+- (UIManagedDocument *)createManagedDocument
+{
+    UIManagedDocument *mainDocument = [[UIManagedDocument alloc] initWithFileURL:[self mainManagedDocumentLocation]];
+    return mainDocument;
+}
+
+- (NSURL *)mainManagedDocumentLocation
+{
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    NSURL *documentsDirectory = [[fileManager URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] firstObject];
+    NSString *documentName = @"GaitCheckMainDocument";
+    NSURL *url = [documentsDirectory URLByAppendingPathComponent:documentName];
+    return url;
 }
 
 @end

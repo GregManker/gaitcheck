@@ -17,4 +17,8 @@
 + (float)liftoffSensitivity;
 
 + (void)setSoundPair:(NSArray *)pairArray;
++ (NSArray *)soundPair;
+
++ (int)selectedSoundIndex;
++ (void)setSoundIndex:(int)selectedIndex;
 @end

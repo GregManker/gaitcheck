@@ -59,4 +59,32 @@
     
 }
 
++ (NSArray *)soundPair
+{
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    if (![userDefaults valueForKey:SELECTED_SOUND_PAIR]) {
+        // this is kind of crappy lazy instantiation...not sure how to make better atm
+        NSURL *tone1 = [NSURL URLWithString:@"System/Library/Audio/UISounds/short_double_low.caf"];
+        NSURL *tone2 = [NSURL URLWithString:@"System/Library/Audio/UISounds/short_double_high.caf"];
+        NSArray *tones = [[NSArray alloc] initWithObjects: [tone1 absoluteString], [tone2 absoluteString], nil];
+        [UserDefaultsHelper setSoundPair:tones];
+    }
+    return [userDefaults objectForKey:SELECTED_SOUND_PAIR];
+}
+
++ (int)selectedSoundIndex
+{
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    if ( (![userDefaults valueForKey:SELECTED_SOUND_INDEX]) ) {
+        [userDefaults setObject:@"0" forKey:SELECTED_SOUND_INDEX];
+    }
+    return [[userDefaults valueForKey:SELECTED_SOUND_INDEX] intValue];
+}
+
++ (void)setSoundIndex:(int)selectedIndex
+{
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    [userDefaults setObject:[NSString stringWithFormat:@"%d", selectedIndex] forKey:SELECTED_SOUND_INDEX];
+}
+        
 @end
